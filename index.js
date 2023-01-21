@@ -12,7 +12,7 @@ app.post("/", (req, res) => {
   // console.log(req.body);
   const chatId = req.body.message.chat.id;
   const sentMessage = req.body.message.text;
-
+  console.log("received message");
   axios
     .post(`${url}${apiToken}/sendMessage`, {
       chat_id: chatId,
