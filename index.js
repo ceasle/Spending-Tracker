@@ -16,7 +16,7 @@ app.post("/", (req, res) => {
   axios
     .post(`${url}${apiToken}/sendMessage`, {
       chat_id: chatId,
-      text: chatId,
+      text: "suijth",
     })
     .then((response) => {
       res.status(200).send(response);
