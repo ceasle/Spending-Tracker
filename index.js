@@ -8,6 +8,7 @@ const apiToken = "5879688415:AAGF4iw7W1I783o3zdRbx2i23KzSRs_xVEM";
 // Configurations
 app.use(bodyParser.json());
 // Endpoints
+console.log("server started");
 app.post("/", (req, res) => {
   // console.log(req.body);
   const chatId = req.body.message.chat.id;
